@@ -1,0 +1,47 @@
+Unity Package Manager Diagnostics (v0.1.8)
+============
+Ran 7 checks
+============
+5 succeeded
+2 failed
+============
+✅ UPM registry reachable (PASS)
+Make an HTTP request to the UPM package registry
+>> HTTP/1.1 200 OK
+>> X-Powered-By: Express
+>> Provider: Genesis
+>> Date: Fri, 21 Apr 2023 07:07:11 GMT
+>> Connection: close
+
+✅ Ping UPM registry (PASS)
+Measure the latency of the UPM package registry API
+>> 5 pings made in 5.554 seconds
+>> Average latency: 177.04 ms
+>> Minimum latency: 176.16 ms
+>> Maximum latency: 179.97 ms
+>> Standard deviation: 1.65
+
+✅ Ping UPM download (PASS)
+Measure the latency of the UPM package download endpoint
+>> 5 pings made in 5.807 seconds
+>> Average latency: 15.48 ms
+>> Minimum latency: 13.53 ms
+>> Maximum latency: 18.95 ms
+>> Standard deviation: 2.08
+
+✅ UPM registry download speed (PASS)
+Test the Internet connection using the UPM package registry
+>> Measured speed to the UPM registry: 64.64 Megabits per second
+
+❌ Speedtest.net (FAIL)
+Test the Internet connection using Speedtest.net
+>> Connection error.
+
+✅ HTTP proxy environment variables (PASS)
+Detect whether proxy-related environment variables are set (HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, NO_PROXY, UNITY_PROXYSERVER, UNITY_NOPROXY)
+>> No proxy support has been configured through environment variables.
+
+❌ UPM health check (FAIL)
+Start the UPM process and call its health endpoint
+>> Server started but did not respond to health requests:
+>> Error: ETIMEDOUT
